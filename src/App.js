@@ -31,7 +31,6 @@ function App() {
     let computerChoice = randomChoice()
     setComputerSelect(computerChoice)
     setResult(judgement(choice[userChoice], computerChoice))
-    setResult2(judgement2(choice[userChoice], computerChoice))
   }
 const judgement = (user, computer) =>{
   console.log("u", user, "c",computer)
@@ -40,15 +39,6 @@ const judgement = (user, computer) =>{
   }else if(user.name ==="Rock")return computer.name==="Scissors"?"win":"lose"
   else if(user.name ==="Scissors")return computer.name==="Paper"?"win":"lose"
   else if(user.name ==="Paper")return computer.name==="Rock"?"win":"lose"    
-}
-
-const judgement2 = (user, computer) =>{
-  console.log("u", user, "c",computer)
-  if(user.name === computer.name){
-    return "tie"
-  }else if(user.name ==="Rock")return computer.name==="Scissors"?"lose":"win"
-  else if(user.name ==="Scissors")return computer.name==="Paper"?"lose":"win"
-  else if(user.name ==="Paper")return computer.name==="Rock"?"lose":"win"    
 }
 
   const randomChoice=()=>{
@@ -61,7 +51,7 @@ const judgement2 = (user, computer) =>{
   return <div className='container'>
     <div className='main2'>
       <Box title="You" item={userSelect} result={result}/>
-      <Box title="Computer" item={computerSelect} result={result2}/>
+      <Box title="Computer" item={computerSelect} result={result}/>
     </div>
     <div className='main'>
       <button className='col-1.5' onClick={()=>play("scissors")}>가위</button>
