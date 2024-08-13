@@ -64,9 +64,9 @@ const judgement2 = (user, computer) =>{
       <Box title="Computer" item={computerSelect} result={result2}/>
     </div>
     <div className='main'>
-      <button className='' onClick={()=>play("scissors")}>가위</button>
-      <button className='' onClick={()=>play("rock")}>바위</button>
-      <button className='' onClick={()=>play("paper")}>보</button>
+      <button className='col-1.5' onClick={()=>play("scissors")}>가위</button>
+      <button className='col-1.5' onClick={()=>play("rock")}>바위</button>
+      <button className='col-1.5' onClick={()=>play("paper")}>보</button>
     </div>
   </div>;
 }
