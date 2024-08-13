@@ -13,7 +13,7 @@ const Box = (props) => {
     result = props.result
   }
   return (
-    <div className="main row">
+    <div className={`main row ${result}`}>
       <h1>{props.title}</h1>
       <h2>{props.item && props.item.name}</h2>
       <img
