@@ -58,15 +58,15 @@ const judgement2 = (user, computer) =>{
     let final = itemArray[randomItem]
     return choice[final]
   }
-  return <div>
-    <div className='main'>
+  return <div className='container'>
+    <div className='main2'>
       <Box title="You" item={userSelect} result={result}/>
       <Box title="Computer" item={computerSelect} result={result2}/>
     </div>
     <div className='main'>
-      <button onClick={()=>play("scissors")}>가위</button>
-      <button onClick={()=>play("rock")}>바위</button>
-      <button onClick={()=>play("paper")}>보</button>
+      <button className='' onClick={()=>play("scissors")}>가위</button>
+      <button className='' onClick={()=>play("rock")}>바위</button>
+      <button className='' onClick={()=>play("paper")}>보</button>
     </div>
   </div>;
 }
