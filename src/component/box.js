@@ -19,7 +19,7 @@ const Box = (props) => {
       <img
         className="img-item"
         src={props.item && props.item.img}
-        alt=" "
+        alt=""
       />
       <h2>{result}</h2>
     </div>
