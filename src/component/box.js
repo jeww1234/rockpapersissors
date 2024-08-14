@@ -16,12 +16,13 @@ const Box = (props) => {
     <div className={`main row ${result}`}>
       <h1>{props.title}</h1>
       <h2>{props.item && props.item.name}</h2>
+      <div className="img-box33">
       <img
         className="img-item"
         src={props.item && props.item.img}
         alt=""
-      />
-      <h2>{result}</h2>
+      /></div>
+      <h3>{result}</h3>
     </div>
   );
 };
